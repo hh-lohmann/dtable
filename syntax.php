@@ -4,6 +4,7 @@
  * 
  * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
  * @author     Szymon Olewniczak <szymon.olewniczak@rid.pl>
+ * @author     hh.lohmann <hh.lohmann@yahoo.de>
  */
 
 // must be run within DokuWiki
@@ -50,6 +51,7 @@ class syntax_plugin_dtable extends DokuWiki_Syntax_Plugin {
     }
 
     function render($mode, &$renderer, $data) {
+    	global $ID;
 	if($mode == 'xhtml')
 	{
 	   list($state,$match) = $data;
